@@ -10,7 +10,7 @@ private:
 public:
 	Person() : Name("Unknown"), Address("Unknown"), AllowedToDrive(0) {}
 
-	Person(std::string nName = "Unknown", std::string nAddress = "Unknown", bool nAllowedToDrive = 0) {
+	Person(std::string nName, std::string nAddress = "Unknown", bool nAllowedToDrive = 0) {
 		Name = nName;
 		Address = nAddress;
 		AllowedToDrive = nAllowedToDrive;

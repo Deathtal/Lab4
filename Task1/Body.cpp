@@ -9,7 +9,7 @@ private:
 public:
 	Body() : color("Unknown"), width(0), height(0) {}
 
-	Body(std::string nColor = "Unknown", float nWidth = 0, float nHeight = 0) {
+	Body(std::string nColor, float nWidth = 0, float nHeight = 0) {
 		color = nColor;
 		width = nWidth;
 		height = nHeight;

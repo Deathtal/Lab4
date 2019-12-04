@@ -7,7 +7,7 @@ private:
 public:
 	Body();
 
-	Body(std::string nColor = "Unknown", float nWidth = 0, float nHeight = 0);
+	Body(std::string nColor, float nWidth = 0, float nHeight = 0);
 
 	void setColor(std::string nColor);
 	void setSize(float nWidth, float nHeight);

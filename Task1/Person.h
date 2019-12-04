@@ -8,7 +8,7 @@ private:
 public:
 	Person();
 
-	Person(std::string nName = "Unknown", std::string nAddress = "Unknown", bool nAllowedToDrive = 0);
+	Person(std::string nName, std::string nAddress = "Unknown", bool nAllowedToDrive = 0);
 
 	void setName(std::string nName);
 	void setAddress(std::string nAddress);
