@@ -1,34 +1,28 @@
 #include "Engine.h"
 #include <iostream>
 
-class Engine {
-private:
-	float sizeInLiters;
-	int numberOfCylinders;
-public:
-	Engine() : sizeInLiters(0), numberOfCylinders(0) {}
+Engine::Engine() : sizeInLiters(0), numberOfCylinders(0) {}
 
-	Engine(float nSizeInLiters, int nNumberOfCylinders = 0) {
-		sizeInLiters = nSizeInLiters;
-		numberOfCylinders = nNumberOfCylinders;
-	}
+Engine::Engine(float nSizeInLiters, int nNumberOfCylinders) {
+	sizeInLiters = nSizeInLiters;
+	numberOfCylinders = nNumberOfCylinders;
+}
 
-	void setSize(float nSizeInList) {
-		sizeInLiters = nSizeInList;
-	}
-	void setNumberOfCylidners(int nNumberOfCylinders) {
-		numberOfCylinders = nNumberOfCylinders;
-	}
+void Engine::setSize(float nSizeInList) {
+	sizeInLiters = nSizeInList;
+}
+void Engine::setNumberOfCylidners(int nNumberOfCylinders) {
+	numberOfCylinders = nNumberOfCylinders;
+}
 
-	const float getSize() const {
-		return sizeInLiters;
-	}
-	const int getNumberOfCylinders() const {
-		return numberOfCylinders;
-	}
+const float Engine::getSize() const {
+	return sizeInLiters;
+}
+const int Engine::getNumberOfCylinders() const {
+	return numberOfCylinders;
+}
 
-	const void print() const {
-		std::cout << "Size of engine: " << sizeInLiters << " L" << std::endl;
-		std::cout << "Number of cylinders: " << numberOfCylinders << std::endl;
-	}
-};
+const void Engine::print() const {
+	std::cout << "Size of engine: " << sizeInLiters << " L" << std::endl;
+	std::cout << "Number of cylinders: " << numberOfCylinders << std::endl;
+}
