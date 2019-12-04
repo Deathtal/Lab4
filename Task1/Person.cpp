@@ -33,5 +33,5 @@ const bool Person::getAllowedToDrive() const {
 const void Person::print() const {
 	std::cout << "Name: " << Name << std::endl;
 	std::cout << "Address: " << Address << std::endl;
-	std::cout << "Allowed to drive: " << (AllowedToDrive ? "Yes" : "No");
+	std::cout << "Allowed to drive: " << (AllowedToDrive ? "Yes" : "No") << std::endl;
 }
