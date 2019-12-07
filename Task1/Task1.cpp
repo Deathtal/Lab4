@@ -17,6 +17,7 @@ int main() {
 	int tireNumber;
 	std::string model;
 	for (int i = 0; i < 2; i++) {
+		// It doesn't ask for everything. I made use of default values so that it is not required.
 		std::cout << "Name: ";
 		std::cin >> name;
 		person.setName(name);
